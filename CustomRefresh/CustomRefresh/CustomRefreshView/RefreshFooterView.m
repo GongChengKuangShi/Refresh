@@ -137,6 +137,7 @@ const CGFloat RefreshFooterHeight = 60;
         if (self.dragHeight > 1) {
             self.refreshState = RefreshStateLoading;
         }
+        
     }else {
         if (self.scrollView.isDragging) {
             if (self.dragHeight < self.dragHeightThreshold) {

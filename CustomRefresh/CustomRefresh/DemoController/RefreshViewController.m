@@ -5,7 +5,7 @@
 //  Created by Apple on 2017/1/4.
 //  Copyright © 2017年 mgjr. All rights reserved.
 //
-
+//https://www.testhnmgjr.com/mgjr-web-app/V2.0/appHqb/tenderingList?code=161019161528239685&keyStr=b9921fc51a4d1ec2997b0c1378559212&pageNum=1&pageSize=500
 #import "RefreshViewController.h"
 #import "MGRefreshFootView.h"
 #import "MGRefreshHeaderView.h"
@@ -16,6 +16,7 @@
 @property (strong, nonatomic) UITableView *mTableView;
 @property (strong, nonatomic) MGRefreshHeaderView *headerView;
 @property (strong, nonatomic) MGRefreshFootView *footerView;
+@property (strong, nonatomic) NSArray *dataArray;
 
 @end
 
@@ -35,9 +36,12 @@
     self.mTableView.dataSource = self;
     self.mTableView.rowHeight  = 60;
     [self.view addSubview:self.mTableView];
-    
+    [self setTableViewData];
     [self addRefreshView];
 }
+
+
+
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
@@ -48,6 +52,22 @@
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
 }
+
+- (NSArray *)dataArray {
+    if (!_dataArray) {
+        _dataArray = [[NSArray alloc] init];
+    }
+    return _dataArray;
+}
+
+- (void)setTableViewData {
+    NSString *urlString = @"https://www.testhnmgjr.com/mgjr-web-app/V2.0/appHqb/tenderingList?code=161019161528239685&keyStr=b9921fc51a4d1ec2997b0c1378559212&pageNum=1&pageSize=500";
+    NSURL *url = [NSURL URLWithString:urlString];
+    NSData *data = [NSData dataWithContentsOfURL:url];
+    NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+    _dataArray = [dictionary objectForKey:@"tenderList"];
+}
+
 
 - (void)addRefreshView {
     __weak __typeof(self)weakSelf = self;
@@ -71,7 +91,7 @@
     __weak MGRefreshHeaderView *weakHeaderView = self.mTableView.refreshHeaderView;
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        self.rows = 12;
+        self.rows = 20;
         [weakTableView reloadData];
         [weakHeaderView endRefresh];
     });
@@ -82,14 +102,14 @@
     __weak MGRefreshFootView *weakFooterView = self.mTableView.refreshFootView;
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        self.rows += 12;
+        self.rows += 20;
         [weakTableView reloadData];
         [weakFooterView endRefresh];
     });
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.rows;
+    return self.dataArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
