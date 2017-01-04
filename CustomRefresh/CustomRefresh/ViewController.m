@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "WeiboRefreshDemoController.h"
+#import "RefreshViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (strong, nonatomic)NSArray *dataArray;
@@ -28,7 +29,7 @@
     tableView.delegate     = self;
     [self.view addSubview:tableView];
     
-    _dataArray = @[@"仿微博5.4.0上下拉加载"];
+    _dataArray = @[@"仿微博5.4.0上下拉加载",@"上下拉刷新手动和自动"];
 }
 
 #pragma mark -- UITableViewDelegate and UITableViewDatasource
@@ -51,6 +52,10 @@
     if (indexPath.row == 0) {
         WeiboRefreshDemoController *ctr = [[WeiboRefreshDemoController alloc] init];
         [self.navigationController  pushViewController:ctr animated:YES];
+    }
+    if (indexPath.row == 1) {
+        RefreshViewController *refreshViewController = [[RefreshViewController alloc] init];
+        [self.navigationController pushViewController:refreshViewController animated:YES];
     }
 }
 

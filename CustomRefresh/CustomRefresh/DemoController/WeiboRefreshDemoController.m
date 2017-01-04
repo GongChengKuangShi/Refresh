@@ -36,14 +36,12 @@
     
     _data = 100;
     [self addRefreshView];
-    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [_tableView.reshHeaderView startRefresh];
 }
-
 
 - (void)addRefreshView {
     __weak __typeof(self) weakSelf = self;
@@ -96,4 +94,5 @@
     cell.textLabel.text = [NSString stringWithFormat:@"%@", @(indexPath.row)];
     return cell;
 }
+
 @end

@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/apple/Desktop/moreClassDemo/moreClassdemo/CustomRefresh/CustomRefresh/CustomRefreshView/RefreshFooterView.m \
-  /Users/apple/Desktop/moreClassDemo/moreClassdemo/CustomRefresh/CustomRefresh/CustomRefreshView/RefreshFooterView.h
+  /Users/apple/Desktop/lotsOfDemo/Refresh/CustomRefresh/CustomRefresh/CustomRefreshView/RefreshFooterView.m \
+  /Users/apple/Desktop/lotsOfDemo/Refresh/CustomRefresh/CustomRefresh/CustomRefreshView/RefreshFooterView.h

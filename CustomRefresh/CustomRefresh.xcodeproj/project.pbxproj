@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		185412981E1C9B59005BAC46 /* blueArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 185412961E1C9B59005BAC46 /* blueArrow.png */; };
+		185412991E1C9B59005BAC46 /* blueArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 185412971E1C9B59005BAC46 /* blueArrow@2x.png */; };
+		1854129C1E1C9B8B005BAC46 /* MGRefreshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1854129B1E1C9B8B005BAC46 /* MGRefreshBaseView.m */; };
+		185412A21E1C9BF4005BAC46 /* MGRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 185412A11E1C9BF4005BAC46 /* MGRefreshHeaderView.m */; };
+		185412A51E1C9C0D005BAC46 /* MGRefreshFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 185412A41E1C9C0D005BAC46 /* MGRefreshFootView.m */; };
+		185412A81E1CCB46005BAC46 /* UIScrollView+MGRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 185412A71E1CCB46005BAC46 /* UIScrollView+MGRefresh.m */; };
+		185412AB1E1CCD14005BAC46 /* RefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185412AA1E1CCD14005BAC46 /* RefreshViewController.m */; };
 		18AEBD6E1E1B54D5008A2CCF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AEBD6D1E1B54D5008A2CCF /* main.m */; };
 		18AEBD711E1B54D5008A2CCF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AEBD701E1B54D5008A2CCF /* AppDelegate.m */; };
 		18AEBD741E1B54D5008A2CCF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AEBD731E1B54D5008A2CCF /* ViewController.m */; };
@@ -41,6 +48,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		185412961E1C9B59005BAC46 /* blueArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueArrow.png; sourceTree = "<group>"; };
+		185412971E1C9B59005BAC46 /* blueArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blueArrow@2x.png"; sourceTree = "<group>"; };
+		1854129A1E1C9B8B005BAC46 /* MGRefreshBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGRefreshBaseView.h; sourceTree = "<group>"; };
+		1854129B1E1C9B8B005BAC46 /* MGRefreshBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGRefreshBaseView.m; sourceTree = "<group>"; };
+		185412A01E1C9BF4005BAC46 /* MGRefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGRefreshHeaderView.h; sourceTree = "<group>"; };
+		185412A11E1C9BF4005BAC46 /* MGRefreshHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGRefreshHeaderView.m; sourceTree = "<group>"; };
+		185412A31E1C9C0D005BAC46 /* MGRefreshFootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGRefreshFootView.h; sourceTree = "<group>"; };
+		185412A41E1C9C0D005BAC46 /* MGRefreshFootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGRefreshFootView.m; sourceTree = "<group>"; };
+		185412A61E1CCB46005BAC46 /* UIScrollView+MGRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MGRefresh.h"; sourceTree = "<group>"; };
+		185412A71E1CCB46005BAC46 /* UIScrollView+MGRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MGRefresh.m"; sourceTree = "<group>"; };
+		185412A91E1CCD14005BAC46 /* RefreshViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshViewController.h; sourceTree = "<group>"; };
+		185412AA1E1CCD14005BAC46 /* RefreshViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshViewController.m; sourceTree = "<group>"; };
 		18AEBD691E1B54D5008A2CCF /* CustomRefresh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomRefresh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18AEBD6D1E1B54D5008A2CCF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18AEBD6F1E1B54D5008A2CCF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -94,6 +113,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		185412951E1C9AA2005BAC46 /* CustomrefreshView1 */ = {
+			isa = PBXGroup;
+			children = (
+				185412961E1C9B59005BAC46 /* blueArrow.png */,
+				185412971E1C9B59005BAC46 /* blueArrow@2x.png */,
+				1854129A1E1C9B8B005BAC46 /* MGRefreshBaseView.h */,
+				1854129B1E1C9B8B005BAC46 /* MGRefreshBaseView.m */,
+				185412A01E1C9BF4005BAC46 /* MGRefreshHeaderView.h */,
+				185412A11E1C9BF4005BAC46 /* MGRefreshHeaderView.m */,
+				185412A31E1C9C0D005BAC46 /* MGRefreshFootView.h */,
+				185412A41E1C9C0D005BAC46 /* MGRefreshFootView.m */,
+				185412A61E1CCB46005BAC46 /* UIScrollView+MGRefresh.h */,
+				185412A71E1CCB46005BAC46 /* UIScrollView+MGRefresh.m */,
+			);
+			path = CustomrefreshView1;
+			sourceTree = "<group>";
+		};
 		18AEBD601E1B54D5008A2CCF = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +153,7 @@
 		18AEBD6B1E1B54D5008A2CCF /* CustomRefresh */ = {
 			isa = PBXGroup;
 			children = (
+				185412951E1C9AA2005BAC46 /* CustomrefreshView1 */,
 				18AEBDA01E1B552C008A2CCF /* CustomRefreshView */,
 				18AEBD9F1E1B552C008A2CCF /* DemoController */,
 				18AEBD6F1E1B54D5008A2CCF /* AppDelegate.h */,
@@ -163,6 +200,8 @@
 			children = (
 				18AEBDAE1E1B9254008A2CCF /* WeiboRefreshDemoController.h */,
 				18AEBDAF1E1B9254008A2CCF /* WeiboRefreshDemoController.m */,
+				185412A91E1CCD14005BAC46 /* RefreshViewController.h */,
+				185412AA1E1CCD14005BAC46 /* RefreshViewController.m */,
 			);
 			path = DemoController;
 			sourceTree = "<group>";
@@ -292,6 +331,8 @@
 				18AEBD7C1E1B54D5008A2CCF /* LaunchScreen.storyboard in Resources */,
 				18AEBD791E1B54D5008A2CCF /* Assets.xcassets in Resources */,
 				18AEBD771E1B54D5008A2CCF /* Main.storyboard in Resources */,
+				185412991E1C9B59005BAC46 /* blueArrow@2x.png in Resources */,
+				185412981E1C9B59005BAC46 /* blueArrow.png in Resources */,
 				18AEBDAA1E1B6CBB008A2CCF /* tableview_pull_refresh@3x.png in Resources */,
 				18AEBDA91E1B6CBB008A2CCF /* tableview_pull_refresh@2x.png in Resources */,
 			);
@@ -318,13 +359,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185412A51E1C9C0D005BAC46 /* MGRefreshFootView.m in Sources */,
 				18AEBD741E1B54D5008A2CCF /* ViewController.m in Sources */,
 				18AEBDAD1E1B88A0008A2CCF /* UIScrollView+Refresh.m in Sources */,
 				18AEBDA61E1B5563008A2CCF /* RefreshFooterView.m in Sources */,
+				185412A21E1C9BF4005BAC46 /* MGRefreshHeaderView.m in Sources */,
 				18AEBDB01E1B9254008A2CCF /* WeiboRefreshDemoController.m in Sources */,
 				18AEBDA31E1B554D008A2CCF /* RefreshHeaderView.m in Sources */,
 				18AEBD711E1B54D5008A2CCF /* AppDelegate.m in Sources */,
+				185412AB1E1CCD14005BAC46 /* RefreshViewController.m in Sources */,
 				18AEBD6E1E1B54D5008A2CCF /* main.m in Sources */,
+				185412A81E1CCB46005BAC46 /* UIScrollView+MGRefresh.m in Sources */,
+				1854129C1E1C9B8B005BAC46 /* MGRefreshBaseView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +604,7 @@
 				18AEBD981E1B54D5008A2CCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18AEBD991E1B54D5008A2CCF /* Build configuration list for PBXNativeTarget "CustomRefreshTests" */ = {
 			isa = XCConfigurationList;
@@ -566,6 +613,7 @@
 				18AEBD9B1E1B54D5008A2CCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18AEBD9C1E1B54D5008A2CCF /* Build configuration list for PBXNativeTarget "CustomRefreshUITests" */ = {
 			isa = XCConfigurationList;
@@ -574,6 +622,7 @@
 				18AEBD9E1E1B54D5008A2CCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
