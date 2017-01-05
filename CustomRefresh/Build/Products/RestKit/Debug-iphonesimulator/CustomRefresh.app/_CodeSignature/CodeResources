@@ -32,6 +32,10 @@
 		<data>
 		E0sgq4aw78fgIbud8OlcGDXK7Jw=
 		</data>
+		<key>LICENSE</key>
+		<data>
+		9WzFC/cCXdvX9WhjMWyx3FHutbI=
+		</data>
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
@@ -119,6 +123,17 @@
 			<key>hash2</key>
 			<data>
 			fgHH0PiSkOQrH/csEdfl/q7D9U5/9kQLWytwWQR+sIk=
+			</data>
+		</dict>
+		<key>LICENSE</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9WzFC/cCXdvX9WhjMWyx3FHutbI=
+			</data>
+			<key>hash2</key>
+			<data>
+			XctYWiiro+8jvObwCprtZjxv08Sk/OeFmQX9QeUL1ro=
 			</data>
 		</dict>
 		<key>blueArrow.png</key>
